@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--字符串拼接-->
+<div th:text="'欢迎来到'+${str}+'sss'"></div>
+<hr>
+<div th:text="|渣渣${str}dd,连接:${hrefValue}|"></div>
+<hr>
+<!--超链接-->
+<a th:href="${hrefValue}">百度</a>
+<hr>
+<!--图片-->
+<img th:src="${srcValue}">
+
+</body>
+</html>

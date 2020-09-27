@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--当前时间-->
+<div th:text="${#dates.format(date,'yyyy年MM月dd日')}"></div>
+<hr/>
+<input th:value="${#numbers.formatDecimal(price,1,2)}">
+<hr>
+<div th:text="${#strings.abbreviate(str,10)}"></div>
+<hr/>
+<div th:if="${!#strings.isEmpty(str2)}">str2不为空</div>
+<hr/>
+<div th:text="${#strings.substring(str2,0,4)}"></div>
+</body>
+</html>

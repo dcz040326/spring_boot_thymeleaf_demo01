@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:if="${aaa}">有就业</div>
+<div th:unless="${aaa}">中公</div>
+
+<hr>
+
+<div th:switch="${ccc}">
+    <p th:case="'manger'">ssss</p>
+    <p th:case="'admin'">sxsss</p>
+
+</div>
+
+
+</body>
+</html>

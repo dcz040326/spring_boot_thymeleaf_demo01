@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../resources/02.js"></script>
+    <script src="/02.js"></script>
+    <script th:src="@{/02.js}"></script>
+</head>
+<body>
+<h2>thymeleaf的代码片段使用演示</h2>
+<div th:insert="~{footer:: copy1}"></div>
+<div th:insert="~{footer:: copy2}"></div>
+<div th:insert="~{footer:: copy3}"></div>
+
+<hr/>
+<div th:replace="~{footer:: copy1}"></div>
+<div th:replace="~{footer:: copy2}"></div>
+<div th:replace="~{footer:: copy3}"></div>
+
+<hr/>
+<div th:include="~{footer:: copy1}"></div>
+<div th:include="~{footer:: copy2}"></div>
+<div th:include="~{footer:: copy3}"></div>
+</body>
+</html>

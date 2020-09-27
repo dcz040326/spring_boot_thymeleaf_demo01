@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th>序号</th>
+        <th>用户Id</th>
+        <th>用户名</th>
+        <th>年龄</th>
+        <th>索引</th>
+    </tr>
+    <tr th:each="user,iterstat:${list}">
+        <td th:text="${iterstat.count}"></td>
+        <td th:text="${user.id}"></td>
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.age}"></td>
+        <td th:text="${iterstat.index}"></td>
+    </tr>
+</table>
+
+
+</body>
+</html>
